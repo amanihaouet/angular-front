@@ -1,0 +1,40 @@
+
+<div class="card">
+  
+  <div class="header">
+    <h4 class="title"><span class="bi bi-person"></span> Gestion des utilisateurs</h4>
+    <br>
+<!--     <p class="category">Gestion des comptes</p> -->
+      
+  </div>
+  <div class="content">
+     <div class="content">    
+      <div class="ct-chart">
+        <div class="table-full-width">
+          
+          <table class="table table-hover table-striped">
+            <thead>
+              <tr>
+                <th class="text-center"> </th>
+                <th class="text-center"> Username</th>
+                <th class="text-center"> Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let vote of votes">
+                <td class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="bi bi-person"></i>
+                </td>
+                <td class="text-center">{{vote.userStory}}</td>
+                <td class="text-center">{{vote.userStory}}</td>
+               
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

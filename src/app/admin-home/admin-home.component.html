@@ -1,0 +1,129 @@
+  
+
+
+          <div id="layoutSidenav_content">
+            <div class=" content">
+                <div class=" row">
+                  <div class=" col-12">
+                    <div class=" card card-chart" >
+                      <div class=" card-header" style="background-color: rgba(255, 255, 255, 0.582);">
+                        <div class=" row">
+                          <div class=" col-sm-6 text-left">
+                            <h5 class=" card-category">Total Estimates</h5>
+                            <h2 class=" card-title">Performance</h2>
+                          </div>
+                          <div class=" col-sm-6">
+                            <div
+                              class=" btn-group btn-group-toggle float-right"
+                              data-toggle="buttons"
+                            >
+                              <label class=" button-33" (click)="data=datasets[0];updateOptions();clicked=true;clicked1=false;clicked2=false" [ngClass]="{'active':clicked===true}">
+                                <!-- <input checked="checked" name="options" type="radio" /> -->
+              
+                                <span
+                                  class=" d-none d-sm-block d-md-block d-lg-block d-xl-block"
+                                  style="color:black;">
+                                Participants
+                                </span>
+                                
+                                <span class=" d-block d-sm-none">
+                                  <i class=" tim-icons icon-single-02"> </i>
+                                </span>
+                              </label>
+                              <label class=" button-33" (click)="data=datasets[1];updateOptions();clicked=false;clicked1=true;clicked2=false" [ngClass]="{'active':clicked1===true}">
+                                <!-- <input
+                                  class=" d-none d-sm-none"
+                                  name="options"
+                                  type="radio"
+                                /> -->
+              
+                                <span
+                                  class=" d-none d-sm-block d-md-block d-lg-block d-xl-block"
+                                  style="color:black;">
+                                Meetings
+                                </span>
+                                <span class=" d-block d-sm-none">
+                                  <i class=" tim-icons icon-gift-2"> </i>
+                                </span>
+                              </label>
+                              <label class=" button-33" (click)="data=datasets[2];updateOptions();clicked=false;clicked1=false;clicked2=true" [ngClass]="{'active':clicked2===true}">
+                                <!-- <input class=" d-none" name="options" type="radio" /> -->
+              
+                                <span
+                                  class=" d-none d-sm-block d-md-block d-lg-block d-xl-block"
+                                style="color:black;">
+                                Projects
+                                </span>
+                                <span class=" d-block d-sm-none">
+                                  <i class=" tim-icons icon-tap-02"> </i>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class=" card-body">
+                        <div class=" chart-area"><canvas id="chartBig1"> </canvas></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class=" row">
+                  <div class=" col-lg-4">
+                    <div class=" card card-chart">
+                      <div class=" card-header" style="background-color: rgba(11, 158, 237, 0.582);">
+                        <h5 class=" card-category">Total Projects</h5>
+                        <h3 class=" card-title">
+                          <i class=" tim-icons icon-bell-55 text-danger-states"> </i> 12
+                        </h3>
+                      </div>
+                      <div class=" card-body">
+                        <div class=" chart-area"><canvas id="chartLineRed"> </canvas></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class=" col-lg-4">
+                    <div class=" card card-chart">
+                      <div class=" card-header"style="background-color: rgba(11, 158, 237, 0.582);">
+                        <h5 class=" card-category">Unfinished Tasks</h5>
+                        <h3 class=" card-title">
+                          <i class=" tim-icons icon-delivery-fast text-info"> </i> 20
+                        </h3>
+                      </div>
+                      <div class=" card-body">
+                        <div class=" chart-area"><canvas id="chartLineBlue"> </canvas></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class=" col-lg-4">
+                    <div class=" card card-chart">
+                      <div class=" card-header"style="background-color: rgba(11, 158, 237, 0.582);">
+                        <h5 class=" card-category">Completed Tasks</h5>
+                        <h3 class=" card-title">
+                          <i class=" tim-icons icon-send text-success"> </i> 28
+                        </h3>
+                      </div>
+                      <div class=" card-body">
+                        <div class=" chart-area"><canvas id="chartLineGreen"> </canvas></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+          </div>
+<!--           <div class="col-md-6 text-center">
+             <canvas baseChart 
+              [data]="salesData" 
+              [type]="'bar'"
+              [options]="chartOptions"
+             >
+            </canvas>  
+          </div>   -->
+         
+  
+
+
+    
+  
+ 
